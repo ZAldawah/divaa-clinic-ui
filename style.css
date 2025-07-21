@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: aquamarine;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgb(0, 0, 0);
+}
+
+.navbar-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+}
+
+.navbar-logo {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.navbar-item {
+  background-color: aliceblue;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-item:hover {
+  transform: scale(1.05);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(28, 187, 179);
+}
+
+.hero-text h1 {
+  color: rgb(71, 24, 57);
+  font-size: 48px;
+}
+
+.hero-text p {
+  color: black;
+  font-size: 24px;
+}
+
+.hero-text button {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: gray;
+  transform: scale(1.05);
+}
+
+.hero-logo {
+  display: flex;
+  object-fit: cover;
+  overflow: hidden;
+  height: 640px;
+  width: 640px;
+}
+
+.services {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background-color: brown;
+}
+
+.service-item {
+  background-color: white;
+  padding: 30px;
+  width: 250px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section {
+  background-color: #111;
+  color: #eee;
+  padding: 40px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer-branding {
+  transition: transform 0.5s ease;
+}
+
+.footer-branding:hover {
+  transform: scale(1.1);
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00e5c0;
+}
+
+.footer-info {
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 90%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}

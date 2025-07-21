@@ -1,0 +1,14 @@
+# Node or build tools (future-proof)
+node_modules/
+dist/
+build/
+
+# Sensitive files
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor settings (optional)
+.vscode/
