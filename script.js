@@ -7,3 +7,10 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("navbar-scrolled");
   }
 });
+
+const navbarLinks = document.querySelector("navbar-links");
+const hamburgerButton = document.getElementById("hamburger-button");
+hamburgerButton.addEventListener("click", () => {
+  navbarLinks.style.display =
+    navbarLinks.style.display === "flex" ? "none" : "flex";
+});
