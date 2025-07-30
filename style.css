@@ -68,22 +68,6 @@ body {
   background-color: white;
 }
 
-.navbar-hamburger-button {
-  display: none;
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  z-index: 1100;
-}
-
-#hamburger-button {
-  font-size: 32px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: #2c2c2c;
-}
-
 .hero {
   display: flex;
   height: 100vh;
@@ -211,30 +195,67 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.service-microneedling {
-  background-image: url(pictures/microneedling-image1.JPG);
+.service-filler-lips {
+  background-image: url(pictures/lip-filler.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 15%;
+}
+.service-filler-cheeks {
+  background-image: url(pictures/cheek-filler.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service-filler-under-eye {
+  background-image: url(pictures/undereye-filler.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service-radiesse {
+  background-image: url(pictures/radiesse.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service-sculptra {
+  background-image: url(pictures/sculptra.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service-prptreatment {
+  background-image: url(pictures/prptreatment-image1.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.service-fillers {
-  background-image: url(pictures/filler-image1.JPG);
+.service-rrf {
+  background-image: url(pictures/rrf.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .service-facials {
-  background-image: url(pictures/faical-image1.jpg);
+  background-image: url(pictures/facial-image1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.service-prptreatment {
-  background-image: url(pictures/prptreatment-image1.JPG);
+.service-hydrofacial {
+  background-image: url(pictures/hydrofacial.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-microneedling {
+  background-image: url(pictures/microneedling-image1.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -363,24 +384,9 @@ body {
   background-color: #dbd2e0;
 }
 
-.treatment-introduction-logo {
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-}
-
-.treatment-introduction-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px;
-}
-
 .treatment-introduction-text {
   width: 800px;
+  text-align: center;
 }
 
 .treatment-introduction-text h3 {
@@ -483,32 +489,37 @@ body {
     color: #fff;
   }
 
-  .navbar-hamburger-button {
-    display: block;
-  }
-
   .hero {
     flex-direction: column;
     text-align: center;
     padding-top: 100px;
     min-height: 100vh;
     height: auto;
+    display: flex;
+    height: 100vh;
+    justify-content: left;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .hero-text {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    max-width: 90%;
+    margin: 50px auto 0 auto;
+    text-align: center;
   }
 
   .hero-text h1 {
-    font-size: 40px;
+    font-size: 20px;
   }
 
   .hero-text p {
-    font-size: 18px;
-  }
-
-  .hero-image {
-    height: auto;
-    width: 100%;
-    max-width: 350px;
-    object-fit: cover;
-    overflow: hidden;
+    font-size: 16px;
   }
 
   .services {
@@ -522,5 +533,87 @@ body {
 
   .service-item {
     width: 90%;
+  }
+
+  /* Subhero mobile layout */
+  .subhero-hook1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .subhero-hook1-text {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .subhero-hook1-text h1 {
+    font-size: 38px;
+  }
+
+  .subhero-hook1-text p {
+    font-size: 18px;
+  }
+
+  .subhero-hook1-logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* Treatment intro & function */
+  .treatment-introduction,
+  .treatment-function {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .treatment-introduction-text,
+  .treatment-function-text {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .treatment-introduction-text h3,
+  .treatment-function-text h3 {
+    font-size: 28px;
+  }
+
+  .treatment-introduction-text h3::after,
+  .treatment-function-text h3::after {
+    width: 80%;
+    margin: 10px auto 30px;
+  }
+
+  .treatment-introduction-text p,
+  .treatment-function-text li {
+    font-size: 18px;
+  }
+
+  /* FAQ section */
+  .treatment-faq {
+    padding: 20px;
+  }
+
+  .treatment-faq details {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .treatment-faq summary {
+    font-size: 20px;
+  }
+
+  .treatment-faq p {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer-section {
+    padding: 30px 10px;
+  }
+
+  .footer-branding p {
+    font-size: 14px;
+    line-height: 1.4;
   }
 }
