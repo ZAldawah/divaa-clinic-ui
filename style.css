@@ -17,7 +17,7 @@ body {
 }
 
 .navbar.navbar-scrolled {
-  background-color: gray;
+  background-color: rgba(195, 204, 211, 0.7);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,7 +47,7 @@ body {
 
 .navbar-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex: 1;
   align-items: center;
   height: 80px;
@@ -89,15 +89,16 @@ body {
   height: 100vh;
   justify-content: left;
   align-items: center;
-  background-image: url(pictures/hero-background.jpeg);
+  background-image: url(pictures/landing-image.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 1% 25%;
 }
 
 .hero-text {
   max-width: 600px;
-  margin-left: 100px;
+  margin-left: 40px;
 }
 
 .hero-text-hook {
@@ -196,6 +197,12 @@ body {
 .service-item:hover {
   transform: scale(1.05);
   box-shadow: 4px 16px 48px rgba(0, 0, 0, 0.2);
+}
+
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .service-botox {
